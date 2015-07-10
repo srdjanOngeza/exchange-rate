@@ -24,17 +24,14 @@
     }).responseText;  
     // Kreira se tabela sa podacima na osnovu poslatih JSON podataka
     var data = new google.visualization.DataTable(jsonData);
-
     // Instancira se grafikon (Column Chart je grafikon sa vertikalnim linijama) i prosleduju mu se parametri, ukljucujuci i ID div-a gde ce
     // grafikon biti prikazan
     var chart = new google.visualization.AnnotationChart(document.getElementById('chart_div'));
     var options = {
           displayAnnotations: true
         };
-
         chart.draw(data,options);
       }
- 
   </script>
   </head>
 <body>
@@ -42,6 +39,5 @@
 <h2>Exchange Rates for previous month(1USD/TZS)</h2>
 <!--DIV u kome ce biti prikazan grafikon-->
 <div id="chart_div"></div>
-
 </body>
 </html>
