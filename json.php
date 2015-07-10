@@ -1,6 +1,14 @@
 <?php
 
-$url = "http://currencies.apps.grandtrunk.net/getrange/2015-06-01/2015-06-30/usd/tzs";
+$today = getdate();
+$m=$today['mon'];
+$m=$m-1;
+$url = "http://currencies.apps.grandtrunk.net/getrange/2015-0";
+$url.=$m;
+$url.="-01/2015-0";
+$url.=$m;
+$url.="-30/usd/tzs";
+
 $curl = curl_init($url);
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
 $curl_odgovor = curl_exec($curl);
