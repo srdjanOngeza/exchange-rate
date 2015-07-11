@@ -1,7 +1,6 @@
 #chart_div {
 border-radius:25px;
 
-background-color:blue;
 -moz-box-shadow:10px 10px 5px #888888;
 box-shadow: 10px 10px 5px #888888;
 background-color:#f6f4b7;
@@ -16,7 +15,7 @@ margin-top:3em;
 }
 body{
 background-image:url(Ongeza1.jpg);
-color:white;
+color:blue;
 }
 #logo {
 
