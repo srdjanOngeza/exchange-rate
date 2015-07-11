@@ -35,7 +35,7 @@
   </script>
   </head>
 <body>
-<h1>Ongeza</h1>
+<img src="ongeza_logo.png"  id="logo" height="100" width="100"> 
 <h2>Exchange Rates for previous month(1USD/TZS)</h2>
 <!--DIV u kome ce biti prikazan grafikon-->
 <div id="chart_div"></div>
